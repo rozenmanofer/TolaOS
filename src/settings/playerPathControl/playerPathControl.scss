@@ -1,0 +1,41 @@
+@import '../../utils/consts';
+
+.player-path-control-container {
+  display: inline-flex;
+  align-items: flex-end;
+  margin-left: 1.5em;
+
+  > .browse {
+    position: relative;
+    top: 0.1em;
+    cursor: pointer;
+    font-size: $font-size-settings-small;
+    padding: 0.1em 0.2em;
+    border: 1px solid $color-settings-selected;
+    transition: border 0.1s ease-in;
+    border-radius: $border-radius-settings;
+    font-weight: bold;
+    color: $color-settings-selected;
+
+    &:hover {
+      font-weight: bold;
+      border: 1px solid $color-settings-selected;
+      background-color: rgba($color-settings-selected, 0.1);
+      transition: border 0.1s ease-in;
+    }
+
+    &.empty {
+      background-color: $color-alert;
+      color: white;
+      transition: border 0.1s ease-in;
+      font-size: $font-size-settings-huge;
+
+      &:hover {
+        background-color: transparent;
+        color: $color-alert;
+        transition: border 0.1s ease-in;
+        border-color: $color-alert;
+      }
+    }
+  }
+}

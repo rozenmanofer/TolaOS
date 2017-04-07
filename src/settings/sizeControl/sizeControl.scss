@@ -1,0 +1,36 @@
+@import '../../utils/consts';
+
+.font-size-control-container {
+  display: inline-flex;
+  align-items: flex-end;
+
+  > input[type=radio] {
+    visibility: hidden;
+    position: absolute;
+  }
+
+  > label {
+    position: relative;
+    top: 0.1em;
+    margin-right: 0.3em;
+    cursor: pointer;
+    font-size: $font-size-settings-small;
+    padding: 0.1em 0.2em;
+    border: 1px solid transparent;
+    transition: border 0.1s ease-in;
+    border-radius: $border-radius-settings;
+
+    &:hover {
+      font-weight: bold;
+      color: $color-settings-selected;
+      border: 1px solid $color-settings-selected;
+      background-color: rgba($color-settings-selected, 0.1);
+    }
+  }
+
+  input[type=radio]:checked + label {
+    color: $color-settings-selected;
+    font-weight: bold;
+    border: 1px solid $color-settings-selected;
+  }
+}

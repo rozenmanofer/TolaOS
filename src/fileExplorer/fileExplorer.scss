@@ -1,0 +1,22 @@
+@import '../utils/consts';
+
+body {
+  overflow: hidden;
+}
+
+.file-explorer-container {
+  height: 100vh;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: stretch;
+
+  &.no-cursor {
+    cursor: none;
+  }
+
+  &.no-player {
+    .file-link-container {
+      display: none;
+    }
+  }
+}

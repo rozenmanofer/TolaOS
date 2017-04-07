@@ -1,0 +1,50 @@
+@import '../utils/consts';
+
+.file-link-container {
+  display: flex;
+  align-items: center;
+  font-family: "Arial Black", sans-serif;
+  border: $border-size-file solid black;
+
+  &.MEDIUM {
+    width: 44%;
+    padding: 0 calc(3% - #{$border-size-file});
+    font-size: 7em;
+    letter-spacing: 0.2em;
+  }
+
+  &.LARGE {
+    width: 40%;
+    padding: 0 calc(5% - #{$border-size-file});
+    font-size: 8em;
+    letter-spacing: 0.05em;
+  }
+
+  &.XLARGE {
+    width: 94%;
+    padding: 0 calc(3% - #{$border-size-file});
+    font-size: 14.5em;
+    letter-spacing: 0.2em;
+  }
+
+  &.home {
+    font-family: "Courier New", Courier, monospace;
+  }
+
+  &.selected {
+    background-color: $color-file-selected;
+
+    &.home {
+      background-color: $color-file-home;
+    }
+
+    &.folder {
+      background-color: $color-file-folder;
+    }
+  }
+
+  > .name {
+    white-space: nowrap;
+    overflow: hidden;
+  }
+}

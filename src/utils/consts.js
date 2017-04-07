@@ -1,0 +1,11 @@
+export const HOME = '\<HOME\>'
+export const SPECIAL_RIGHT = 109
+export const SPECIAL_LEFT = 111
+export const SPECIAL_ENTER = 106
+export const ENTER = 13
+export const ESC = 27
+export const MEDIUM = 'MEDIUM'
+export const LARGE = 'LARGE'
+export const XLARGE = 'XLARGE'
+export const MAX_FILE_I = {XLARGE: 2, LARGE:5, MEDIUM: 9}
+export const DEFAULT_ROOT = 'c:\\'

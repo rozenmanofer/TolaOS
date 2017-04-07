@@ -1,0 +1,26 @@
+@import '../../utils/consts';
+
+.settings-bar-container {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 0.5em 1em;
+  background: $color-settings-background;
+  font-family: $font-family-settings;
+  font-size: $font-size-settings;
+  border-bottom: 1px solid $color-settings-border;
+  display: flex;
+  align-items: center;
+  box-shadow: 0px 0 6px 0 rgba(0,0,0,0.75);
+
+  .title {
+    margin-right: 0.2em;
+  }
+
+  .version {
+    position: fixed;
+    right: 1em;
+    color: $color-settings-selected;
+  }
+}

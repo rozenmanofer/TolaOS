@@ -1,0 +1,45 @@
+@import '../../utils/consts';
+
+.debounce-control-container {
+  display: inline-flex;
+  align-items: flex-end;
+  margin-left: 1.5em;
+
+  > .title {
+    margin-right: 0.2em;
+  }
+
+  > input {
+    position: relative;
+    top: 0.1em;
+    width: 2em;
+    padding: 0.2em;
+    color: $color-settings-selected;
+    font-family: $font-family-settings;
+    font-size: $font-size-settings-small;
+    height: 0.8em;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: $border-radius-settings;
+    outline: none;
+    transition: all 0.1s ease-in;
+
+    &::-webkit-inner-spin-button,
+    &::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    &:hover {
+      border: 1px solid $color-settings-selected;
+      cursor: pointer;
+    }
+
+    &:focus {
+      border: 1px solid $color-settings-selected;
+      background-color: rgba($color-settings-selected, 0.1);
+      cursor: text;
+      color: black;
+    }
+  }
+}

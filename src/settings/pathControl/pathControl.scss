@@ -1,0 +1,65 @@
+@import '../../utils/consts';
+
+.path-control-container {
+  display: inline-flex;
+  align-items: flex-end;
+  margin-left: 1.5em;
+
+  > .title {
+    margin-right: 0.2em;
+  }
+
+  > .input {
+    position: relative;
+    top: 0.1em;
+    padding: 0.2em;
+    width: 7em;
+    color: $color-settings-selected;
+    font-family: $font-family-settings;
+    font-size: $font-size-settings-small;
+    height: 0.8em;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: $border-radius-settings;
+    outline: none;
+    transition: all 0.1s ease-in;
+    margin-right: 0.2em;
+
+    &:hover {
+      border: 1px solid $color-settings-selected;
+      cursor: pointer;
+    }
+
+    &:focus {
+      border: 1px solid $color-settings-selected;
+      background-color: rgba($color-settings-selected, 0.1);
+      cursor: text;
+      color: black;
+    }
+
+    &.invalid {
+      border: 1px solid $color-settings-invalid;
+      background-color: rgba($color-settings-invalid, 0.3);
+    }
+  }
+
+  > .browse {
+    position: relative;
+    top: 0.1em;
+    cursor: pointer;
+    font-size: $font-size-settings-small;
+    padding: 0.1em 0.2em;
+    border: 1px solid $color-settings-selected;
+    transition: border 0.1s ease-in;
+    border-radius: $border-radius-settings;
+    font-weight: bold;
+    color: $color-settings-selected;
+
+    &:hover {
+      font-weight: bold;
+      border: 1px solid $color-settings-selected;
+      background-color: rgba($color-settings-selected, 0.1);
+      transition: border 0.1s ease-in;
+    }
+  }
+}
