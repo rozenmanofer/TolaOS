@@ -1,2 +1,2 @@
-# TolaOS
+# TolaOS | Operating System For The Elderly
 readme is still under construction...
