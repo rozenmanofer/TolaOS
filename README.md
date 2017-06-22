@@ -1,2 +1,4 @@
 # TolaOS | Operating System For The Elderly
-readme is still under construction...
+Even though this readme is still under construction, you're more than welcome to use it or contact me with any Qs: rozenmanofer@gmail.com.
+
+Have fun :)
