@@ -32,7 +32,7 @@
   },
   "dependencies": {
     "electron-devtools-installer": "^2.0.1",
-    "electron": "^1.6.1",
+    "electron": "^9.1.0",
     "electron-data": "^1.2.1",
     "electron-debug": "^1.0.1",
     "say": "^0.11.0",
